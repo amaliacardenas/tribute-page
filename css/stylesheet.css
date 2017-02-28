@@ -1,0 +1,20 @@
+#header { 
+  background-color: green;
+  height: 350px;
+  width: 100%
+  z-index: auto;
+}
+
+.header-image{
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-text{
+  display: block;
+  text-align: center;
+}
