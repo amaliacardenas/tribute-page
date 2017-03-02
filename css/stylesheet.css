@@ -29,30 +29,43 @@
   width: 200px;
   border-radius: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   border: 2px solid #718ca1;
 }
 
 
 /*timeline section*/
 
-.timeline{
-  position: relative;
-  width: 400px;
+/*.timeline {
+  width: 500px;
   height: 350px;
   line-height: 50px;
-  display: inline-block;
+  float: left;
   top: 350px;
+  margin: auto;
+}*/
+
+.float-left {
+  float: left;
 }
 
+.float-right{
+  float: right;
+}
 .cd-timeline-content {
     position: relative;
-    margin-left: 60px;
+    margin: auto;
     background: white;
     border-radius: 0.25em;
     padding: 1em;
     box-shadow: 0 3px 0 #d7e4ed;
+    border: 1px solid blue;
+    /*box-sizing: border-box;*/
+ /*   float: left;*/
+    top: 350px;
+    width: 600px;
+    height: 350px;
+    line-height: 50px;
 }
 
 
@@ -91,3 +104,4 @@ blockquote.twitter-tweet a:hover,
 blockquote.twitter-tweet a:focus {
   text-decoration: underline;
 }
+
