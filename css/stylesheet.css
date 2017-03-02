@@ -1,5 +1,9 @@
 /*header section*/
 
+favicon{
+  border-radius: 100%
+}
+
 #header { 
   background-color: #303e49;
   text-align: center;
