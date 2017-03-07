@@ -1,11 +1,11 @@
-/* Primary style */
+/***** Primary style *****/
 
 html, body{
   margin: 0;
   padding: 0;
 }
 
-/* Header section */
+/***** Header section *****/
 
 #header { 
   background-color: #303e49;
@@ -36,43 +36,22 @@ header img {
 }
 
 
-/*timeline section*/
+/***** Timeline section *****/
 
-/*.timeline {
-  width: 500px;
-  height: 350px;
-  line-height: 50px;
-  float: left;
-  top: 350px;
-  margin: auto;
-}*/
-
-.float-left {
-  float: left;
-  margin-left: 50px;
+.cd-container{
+  width: 90%
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-.float-right{
-  float: right;
-  margin-right: 50px;
-}
-.cd-timeline-content {
-    position: relative;
-    background: white;
-    border-radius: 0.25em;
-    padding: 1em;
-    border: 1px solid blue;
-    /*box-sizing: border-box;*/
- /*   float: left;*/
-    top: 350px;
-    width: 600px;
-    height: 300px;
-    line-height: 50px;
+.cd-container::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 
-
-/* timeline vertical line */
+/***** Timeline vertical line *****/
 
 #cd-timeline {
   position: relative;
@@ -91,7 +70,54 @@ header img {
   background: #d7e4ed;
 }
 
-/*embedded tweets*/
+.cd-timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+
+.cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+
+.cd-timeline-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-timeline-img img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+.cd-timeline-img.cd-picture {
+  background-color: #8b72cf;
+}
+
+
+
+
+/***** Embedded tweets *****/
 
 blockquote.twitter-tweet {
   display: inline-block;
